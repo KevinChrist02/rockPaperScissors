@@ -36,8 +36,10 @@ function getWinner(player, computerPick) {
         console.log("Paper covers Rock! You Win!");
     } else if (player == "scissor" && computerPick == "rock") {
         console.log("Rock shmashes Scissors! You Lose!");
-    } else {
+    } else if (player == "scissor" && computerPick == "paper"){
         console.log("Scissors cuts Paper! You Win!");
+    } else{
+        console.log("Wrong input!! Check if you missspelled the word")
     }
 }
 // call the getWinner function, to descide who won the game
