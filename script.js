@@ -40,3 +40,6 @@ function getWinner(player, computerPick) {
         console.log("Scissors cuts Paper! You Win!");
     }
 }
+// call the getWinner function, to descide who won the game
+
+getWinner(player, computerPick);
