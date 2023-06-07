@@ -36,12 +36,23 @@ function getWinner(player, computerPick) {
         console.log("Paper covers Rock! You Win!");
     } else if (player == "scissor" && computerPick == "rock") {
         console.log("Rock shmashes Scissors! You Lose!");
-    } else if (player == "scissor" && computerPick == "paper"){
+    } else if (player == "scissor" && computerPick == "paper") {
         console.log("Scissors cuts Paper! You Win!");
-    } else{
+    } else {
         console.log("Wrong input!! Check if you missspelled the word")
     }
 }
 // call the getWinner function, to descide who won the game
 
 getWinner(player, computerPick);
+
+// Section for the Buttons
+
+const button_Rock = document.querySelector("#button_Rock");
+button_Rock.onclick = () => console.log("Rock");
+
+const button_Paper = document.querySelector("#button_Paper");
+button_Paper.onclick = () => console.log("Paper");
+
+const button_Scissors = document.querySelector("#button_Scissors");
+button_Scissors.onclick = () => console.log("Scissors");
