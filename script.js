@@ -49,10 +49,16 @@ getWinner(player, computerPick);
 // Section for the Buttons
 
 const button_Rock = document.querySelector("#button_Rock");
-button_Rock.onclick = () => console.log("Rock");
+button_Rock.addEventListener("click", () =>{
+    return "rock";
+}); 
 
 const button_Paper = document.querySelector("#button_Paper");
-button_Paper.onclick = () => console.log("Paper");
+button_Paper.addEventListener("click", () => {
+    return "paper";
+}) 
 
 const button_Scissors = document.querySelector("#button_Scissors");
-button_Scissors.onclick = () => console.log("Scissors");
+button_Scissors.addEventListener("click", () =>{
+    return "scissor";
+})
